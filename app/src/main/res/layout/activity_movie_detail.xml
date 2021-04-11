@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MovieDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:fontFamily="@font/chicle"
+        android:background="@drawable/background_toolbar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="160dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        tools:src="@color/green" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/iv_photo"
+        android:gravity="center"
+        android:text="Movies Title"
+        android:fontFamily="@font/chicle"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Director"
+        android:textStyle="bold"
+        android:fontFamily="@font/chicle"
+        android:layout_below="@id/tv_title"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/iv_photo"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Release Date"
+        android:textStyle="bold"
+        android:fontFamily="@font/chicle"
+        android:layout_below="@id/tv_director"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_photo"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_runingt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_director"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="42dp"
+        android:layout_toRightOf="@id/iv_photo"
+        android:fontFamily="@font/chicle"
+        android:text="Runing Time"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_description_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_photo"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Description :"
+        android:textStyle="bold"
+        android:fontFamily="@font/chicle"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_description_title"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Desc Movie"
+        android:fontFamily="@font/chicle"
+        android:justificationMode="inter_word"/>
+
+</RelativeLayout>
